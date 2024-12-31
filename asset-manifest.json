@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Launcher-React-/static/css/main.cf4ae42c.chunk.css",
+    "main.js": "/Launcher-React-/static/js/main.8fbbbffb.chunk.js",
+    "main.js.map": "/Launcher-React-/static/js/main.8fbbbffb.chunk.js.map",
+    "runtime-main.js": "/Launcher-React-/static/js/runtime-main.9c6e4cab.js",
+    "runtime-main.js.map": "/Launcher-React-/static/js/runtime-main.9c6e4cab.js.map",
+    "static/js/2.3b33027c.chunk.js": "/Launcher-React-/static/js/2.3b33027c.chunk.js",
+    "static/js/2.3b33027c.chunk.js.map": "/Launcher-React-/static/js/2.3b33027c.chunk.js.map",
+    "static/js/3.ba4fee38.chunk.js": "/Launcher-React-/static/js/3.ba4fee38.chunk.js",
+    "static/js/3.ba4fee38.chunk.js.map": "/Launcher-React-/static/js/3.ba4fee38.chunk.js.map",
+    "index.html": "/Launcher-React-/index.html",
+    "precache-manifest.6499547633953be7018a4635e024e61b.js": "/Launcher-React-/precache-manifest.6499547633953be7018a4635e024e61b.js",
+    "service-worker.js": "/Launcher-React-/service-worker.js",
+    "static/css/main.cf4ae42c.chunk.css.map": "/Launcher-React-/static/css/main.cf4ae42c.chunk.css.map",
+    "static/js/2.3b33027c.chunk.js.LICENSE.txt": "/Launcher-React-/static/js/2.3b33027c.chunk.js.LICENSE.txt",
+    "static/media/P3_2.png": "/Launcher-React-/static/media/P3_2.53d73936.png",
+    "static/media/P41.png": "/Launcher-React-/static/media/P41.37409034.png",
+    "static/media/P42.png": "/Launcher-React-/static/media/P42.c827d987.png",
+    "static/media/lab12.png": "/Launcher-React-/static/media/lab12.c751afc8.png",
+    "static/media/lab21.png": "/Launcher-React-/static/media/lab21.cb19a2ad.png",
+    "static/media/lab22.png": "/Launcher-React-/static/media/lab22.c57b0bb3.png",
+    "static/media/lab4.png": "/Launcher-React-/static/media/lab4.e0f2f8b8.png",
+    "static/media/lab7.jpg": "/Launcher-React-/static/media/lab7.96c4509a.jpg",
+    "static/media/task2.png": "/Launcher-React-/static/media/task2.32d324b5.png",
+    "static/media/test1.png": "/Launcher-React-/static/media/test1.02dd1243.png",
+    "static/media/test2and3.png": "/Launcher-React-/static/media/test2and3.d7ffada4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c6e4cab.js",
+    "static/js/2.3b33027c.chunk.js",
+    "static/css/main.cf4ae42c.chunk.css",
+    "static/js/main.8fbbbffb.chunk.js"
+  ]
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Calculator</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .calculator {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 350px;
+    }
+    #history {
+      max-height: 150px;
+      overflow-y: auto;
+      margin-bottom: 20px;
+      padding-right: 10px;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+    .history-item {
+      margin: 5px 0;
+      color: #555;
+    }
+    #display {
+      width: 90%;
+      height: 50px;
+      font-size: 24px;
+      text-align: right;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .row {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .button {
+      width: 25%;
+      height: 40px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      gap: 10px;
+    }
+    .button:active {
+      background-color: #45a049;
+    }
+    .button.clear {
+      background-color: #f44336;
+    }
+    .button.clear:active {
+      background-color: #e53935;
+    }
+    .button.equal {
+      background-color: #2196F3;
+    }
+    .button.equal:active {
+      background-color: #1e88e5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <div id="history"></div>
+    <input type="text" id="display" readonly />
+
+    <div class="row">
+      <button class="button" onclick="appendToDisplay('1')">1</button>
+      <button class="button" onclick="appendToDisplay('2')">2</button>
+      <button class="button" onclick="appendToDisplay('3')">3</button>
+    </div>
+    <div class="row">
+        <button class="button" onclick="appendToDisplay('4')">4</button>
+        <button class="button" onclick="appendToDisplay('5')">5</button>
+        <button class="button" onclick="appendToDisplay('6')">6</button>
+    </div>
+    <div class="row">
+        <button class="button" onclick="appendToDisplay('7')">7</button>
+        <button class="button" onclick="appendToDisplay('8')">8</button>
+        <button class="button" onclick="appendToDisplay('9')">9</button>
+        <button class="button" onclick="appendToDisplay('0')">0</button>
+    </div>
+    <div class="row">
+        <button class="button" onclick="appendToDisplay('+')">+</button>
+        <button class="button" onclick="appendToDisplay('-')">-</button>
+        <button class="button" onclick="appendToDisplay('*')">*</button>
+        <button class="button clear" onclick="clearDisplay()">C</button>
+        <button class="button equal" onclick="calculateResult()">=</button>
+        <button class="button" onclick="appendToDisplay('/')">/</button>
+    </div>
+  </div>
+
+  <script>
+    let history = [];
+
+    function appendToDisplay(value) {
+      document.getElementById('display').value += value;
+    }
+
+    function clearDisplay() {
+      document.getElementById('display').value = '';
+    }
+
+    function calculateResult() {
+      const display = document.getElementById('display');
+      const expression = display.value;
+
+      try {
+        const result = eval(expression);
+        history.push(`${expression} = ${result}`);
+        display.value = result;
+        updateHistory();
+      } catch (e) {
+        display.value = 'Error';
+      }
+    }
+
+    function updateHistory() {
+      const historyDiv = document.getElementById('history');
+      historyDiv.innerHTML = history
+        .map(item => `<div class="history-item">${item}</div>`)
+        .join('');
+    }
+  </script>
+
+</body>
+</html>
