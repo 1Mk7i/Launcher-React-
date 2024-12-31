@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Launcher-React-/static/css/main.cf4ae42c.chunk.css",
-    "main.js": "/Launcher-React-/static/js/main.a8b52aaa.chunk.js",
-    "main.js.map": "/Launcher-React-/static/js/main.a8b52aaa.chunk.js.map",
+    "main.js": "/Launcher-React-/static/js/main.68dcb7c5.chunk.js",
+    "main.js.map": "/Launcher-React-/static/js/main.68dcb7c5.chunk.js.map",
     "runtime-main.js": "/Launcher-React-/static/js/runtime-main.9c6e4cab.js",
     "runtime-main.js.map": "/Launcher-React-/static/js/runtime-main.9c6e4cab.js.map",
-    "static/js/2.3b33027c.chunk.js": "/Launcher-React-/static/js/2.3b33027c.chunk.js",
-    "static/js/2.3b33027c.chunk.js.map": "/Launcher-React-/static/js/2.3b33027c.chunk.js.map",
+    "static/js/2.e1e407d9.chunk.js": "/Launcher-React-/static/js/2.e1e407d9.chunk.js",
+    "static/js/2.e1e407d9.chunk.js.map": "/Launcher-React-/static/js/2.e1e407d9.chunk.js.map",
     "static/js/3.ba4fee38.chunk.js": "/Launcher-React-/static/js/3.ba4fee38.chunk.js",
     "static/js/3.ba4fee38.chunk.js.map": "/Launcher-React-/static/js/3.ba4fee38.chunk.js.map",
     "index.html": "/Launcher-React-/index.html",
-    "precache-manifest.c7ba1ee726f219e8313ec8dad2f010d4.js": "/Launcher-React-/precache-manifest.c7ba1ee726f219e8313ec8dad2f010d4.js",
+    "precache-manifest.1eef9358cc4d987f16ae597884f8aace.js": "/Launcher-React-/precache-manifest.1eef9358cc4d987f16ae597884f8aace.js",
     "service-worker.js": "/Launcher-React-/service-worker.js",
     "static/css/main.cf4ae42c.chunk.css.map": "/Launcher-React-/static/css/main.cf4ae42c.chunk.css.map",
-    "static/js/2.3b33027c.chunk.js.LICENSE.txt": "/Launcher-React-/static/js/2.3b33027c.chunk.js.LICENSE.txt",
+    "static/js/2.e1e407d9.chunk.js.LICENSE.txt": "/Launcher-React-/static/js/2.e1e407d9.chunk.js.LICENSE.txt",
     "static/media/P3_2.png": "/Launcher-React-/static/media/P3_2.53d73936.png",
     "static/media/P41.png": "/Launcher-React-/static/media/P41.37409034.png",
     "static/media/P42.png": "/Launcher-React-/static/media/P42.c827d987.png",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9c6e4cab.js",
-    "static/js/2.3b33027c.chunk.js",
+    "static/js/2.e1e407d9.chunk.js",
     "static/css/main.cf4ae42c.chunk.css",
-    "static/js/main.a8b52aaa.chunk.js"
+    "static/js/main.68dcb7c5.chunk.js"
   ]
 }
