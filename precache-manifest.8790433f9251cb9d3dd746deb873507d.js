@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "deb48df6fffda47045d24775a1be8a50",
+    "revision": "5be84958e739e99d5e1bc1098a41778c",
     "url": "/Launcher-React-/index.html"
   },
   {
-    "revision": "2f6ef5111a8cea625e6e",
+    "revision": "7e019552440d6f05d4d9",
     "url": "/Launcher-React-/static/css/main.cf4ae42c.chunk.css"
   },
   {
-    "revision": "8d84f956361c3071cd81",
-    "url": "/Launcher-React-/static/js/2.9cae523d.chunk.js"
+    "revision": "4625e162c7f142fb27cd",
+    "url": "/Launcher-React-/static/js/2.ee45a16b.chunk.js"
   },
   {
     "revision": "4bae9b1209dd347103cf6287b323d18e",
-    "url": "/Launcher-React-/static/js/2.9cae523d.chunk.js.LICENSE.txt"
+    "url": "/Launcher-React-/static/js/2.ee45a16b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "20dc911b90613eb7cafa",
-    "url": "/Launcher-React-/static/js/3.ba4fee38.chunk.js"
+    "revision": "d8ca038e08e279efccad",
+    "url": "/Launcher-React-/static/js/3.a3016621.chunk.js"
   },
   {
-    "revision": "2f6ef5111a8cea625e6e",
-    "url": "/Launcher-React-/static/js/main.7ee95cc0.chunk.js"
+    "revision": "7e019552440d6f05d4d9",
+    "url": "/Launcher-React-/static/js/main.792e3340.chunk.js"
   },
   {
-    "revision": "ae9be872fdf81a37b554",
-    "url": "/Launcher-React-/static/js/runtime-main.9c6e4cab.js"
+    "revision": "bce20a972c9a59fbd0cc",
+    "url": "/Launcher-React-/static/js/runtime-main.50620564.js"
   },
   {
     "revision": "53d73936eb270cc9ded005a51e1f8bc6",
@@ -62,13 +62,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "32d324b5a3c225a3f4ca6f05ed1eb1e9",
     "url": "/Launcher-React-/static/media/task2.32d324b5.png"
-  },
-  {
-    "revision": "02dd1243b6c0cd69e4406cf94f643f25",
-    "url": "/Launcher-React-/static/media/test1.02dd1243.png"
-  },
-  {
-    "revision": "d7ffada4a296a101e9dc09ae6243f983",
-    "url": "/Launcher-React-/static/media/test2and3.d7ffada4.png"
   }
 ]);
