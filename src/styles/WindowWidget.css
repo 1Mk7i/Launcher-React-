@@ -1,17 +1,27 @@
 .window {
-  border: 1px solid #555;
-  border-radius: 5px;
-  background: #222;
+  position: absolute;
+  border: 1px solid #333;
+  background-color: #1e1e1e;
+  z-index: 1;
+  border-radius: 8px;
   color: white;
   overflow: hidden;
-  position: absolute;
-  z-index: 1000; /* Убедитесь, что окно отображается поверх других элементов */
-  width: 200px; /* Уменьшенный размер окна */
-  height: 150px; /* Уменьшенный размер окна */
-  resize: both; /* Добавляем возможность изменения размера */
+  width: 300px;
+  height: 200px;
+  resize: both;
   overflow: auto;
-  min-width: 250px; /* Минимальная ширина окна */
-  min-height: 200px; /* Минимальная высота окна */
+  min-width: 250px;
+  min-height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.window.active {
+  z-index: 1000;
+  border-color: #007bff;
+}
+
+.window.pinned {
+  z-index: 2000;
 }
 
 .window.maximized {
@@ -19,7 +29,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  resize: none; /* Отключаем изменение размера при развертывании */
+  resize: none;
 }
 
 .window.minimized {
@@ -27,13 +37,14 @@
 }
 
 .window-header {
-  background: #444;
-  padding: 5px 10px;
   cursor: move;
+  background-color: #333;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 30px; /* Фіксована висота для заголовка */
+  height: 30px;
+  color: white;
 }
 
 .window-content {
