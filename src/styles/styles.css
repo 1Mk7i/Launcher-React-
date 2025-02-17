@@ -1,0 +1,131 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #181818;
+  color: white;
+}
+
+/* Контейнер для карточек */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Хедер */
+.header {
+  background: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header-nav ul li {
+  margin-left: 20px;
+}
+
+.header-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header-nav ul li a:hover {
+  color: red;
+}
+
+/* Бургер-кнопка */
+.burger-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Бекграунд при відкритті меню */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Бокове меню */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #333;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  color: white;
+}
+
+/* Відкриття меню */
+.sidebar.open {
+  left: 0;
+}
+
+/* Кнопка закриття */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Стилі посилань */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  color: red;
+}
+
+/* Сітка для карток */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
