@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useActiveWindow } from '../utils/ActiveWindowContext';
 import '../../styles/WindowWidget.css'; // Імпорт стилів для віджета
-import { u } from "framer-motion/client";
 
 const WindowWidget = ({ title, windowRef }) => {
   const [isMaximized, setIsMaximized] = useState(false); // Стан для максимізації
-  const [isMinimized, setIsMinimized] = useState(false); // Стан для згортання
+  const [isMinimized] = useState(false); // Стан для згортання
   const [isClosed, setIsClosed] = useState(false); // Стан для закриття вікна
   const [isPinned, setIsPinned] = useState(false); // Стан для закріплення вікна
   const { activeWindow, setActiveWindow } = useActiveWindow();
@@ -17,7 +16,6 @@ const WindowWidget = ({ title, windowRef }) => {
   };
 
   const toggleMinimize = () => {
-    setIsMinimized(!isMinimized);
     windowRef.current.style.display = isMinimized ? "block" : "none";
   };
 
@@ -56,6 +54,7 @@ const WindowWidget = ({ title, windowRef }) => {
     return () => {
       windowElement.querySelector(".window-header").removeEventListener("mousedown", onMouseDown);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [setActiveWindow]);
 
   if (isClosed) {

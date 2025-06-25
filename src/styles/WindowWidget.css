@@ -17,7 +17,7 @@
 
 .window.active {
   z-index: 1000;
-  border-color: #007bff;
+  border-color: #0059ff;
 }
 
 .window.pinned {
